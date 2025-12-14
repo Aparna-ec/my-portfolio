@@ -17,6 +17,6 @@ hardware, software, AI-assisted development, and design.
 - GitHub Pages
 
 ## Live Site
-👉 https://Aparna-ec.github.io/aparna-portfolio/
+👉 https://Aparna-ec.github.io/my-portfolio/
 
 Built with ❤️ and curiosity.
