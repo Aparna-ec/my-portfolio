@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aparna | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.ico">
+</head>
+<script>
+function revealOnScroll() {
+  const reveals = document.querySelectorAll(".reveal");
+  reveals.forEach(el => {
+    const windowHeight = window.innerHeight;
+    const elementTop = el.getBoundingClientRect().top;
+    if (elementTop < windowHeight - 100) {
+      el.classList.add("active");
+    }
+  });
+}
+
+window.addEventListener("scroll", revealOnScroll);
+window.addEventListener("load", revealOnScroll);
+</script>
+<body>
+  <header class="navbar">
+    <div class="logo">Aparna<span>EC</span></div>
+    <div class="menu-icon">☰</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <p class="tagline">BTech ECE • Developer • Hackathon Enthusiast</p>
+      <h1>Hi, I'm <span>Aparna</span></h1>
+      <p class="hero-subtext">
+        I build apps and websites using AI-powered tools, exploring Flutter, web dev,
+        Firebase, and AI chatbots,building simple electronics project along with simply exploring to new tech andavours while studying ECE.
+      </p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn primary">View Projects</a>
+        <a href="#contact" class="btn secondary">Contact Me</a>
+        <a href="resume/Aparna_Resume.pdf" class="btn secondary" download>
+          Download Resume
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section reveal">
+    <h2>About Me</h2>
+    <p>
+      I'm a 4th sem BTech Electronics & Communication student who loves building
+      practical projects using app and web development, snesors and with real people emotions and empathy. I enjoy hackathons,
+      projects, and using AI tools like ChatGPT, Gemini,Perplexity and Cursor to speed up
+      my learning and development. Currently studying at Mar Athanasius College of
+      Engineering, Kothamangalam.
+    </p>
+  </section>
+
+  <section id="skills" class="section reveal">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <h3>Development</h3>
+        <ul>
+          <li>Flutter (apps + web)</li>
+          <li>HTML, CSS, basic JS</li>
+          <li>Firebase (Auth, Firestore)</li>
+          <li>Git & GitHub</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>Tools & AI</h3>
+        <ul>
+          <li>VS Code, Cursor</li>
+          <li>ChatGPT, Gemini, Perplexity</li>
+          <li>GitHub Pages deployment</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>Soft Skills</h3>
+        <ul>
+          <li>Teamwork & communication</li>
+          <li>Hackathon participation</li>
+          <li>Presentation & documentation</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3>Hardware</h3>
+        <ul>
+            <li>Microcontrollers (Arduino, ESP)</li>
+            <li>Sensors & actuators</li>
+            <li>Basic circuit design</li>
+            <li>3D modeling & printing</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+    <section id="projects" class="section reveal">
+    <h2>Projects</h2>
+    <p style="margin-bottom: 1rem; color: #94a3b8;">
+      A mix of hardware, software, AI and design projects I've built with friends in
+      hackathons, designathons and personal experiments.
+    </p>
+
+    <div class="projects-grid">
+      <!-- Likely -->
+      <div class="project-card">
+        <img src="images/likely_dashboard.png" alt="Likely dashboard" class="project-img">
+        <h3>💧 Likely – Smart Pipe Leak Detector</h3>
+        <span class="badge">Hardware · AI · Web Dashboard</span>
+        <p>
+          A leak detection system for water pipe networks using flow sensors
+          (future upgrade to optical fiber sensing) and a solenoid valve to stop
+          the flow when a leak is predicted.
+        </p>
+        <p>
+          I built an AI-powered dashboard that shows live flow & pressure trends,
+          detects leaks with confidence scores, and estimates water loss for each
+          zone.
+        </p>
+        <p class="tech">
+          Tech: Microcontrollers & sensors, Python/ML, web dashboard, data
+          visualization
+        </p>
+        <p class="highlight">🏆 3rd prize in a leak-detection hackathon</p>
+        <div class="project-links">
+          <a href="https://github.com/ryanthecoder2006/Zeners-Regen-Hackathon-.git" target="_blank">GitHub</a>
+        </div>
+      </div>
+
+      <!-- Lavette -->
+      <div class="project-card">
+        <h3>🧭 Lavette – Vacuum Support Handle</h3>
+        <span class="badge">Assistive Design · In Progress</span>
+        <p>
+          A vacuum-based handle designed for people with weak leg muscles to
+          help them safely climb up and down height differences, especially in
+          homes and public spaces without ramps.
+        </p>
+        <p>
+          Our team co-designed it with a neurodivergent friend: from calculating
+          loads to CAD modeling, 3D printing prototypes, testing with users and
+          iterating the design for comfort and safety.
+        </p>
+        <p class="tech">
+          Tech: CAD (Fusion 360), 3D printing, user-centered design, ergonomics
+        </p>
+      </div>
+
+      <!-- Reverse Tic-Tac-Toe -->
+      <div class="project-card">
+        <h3>⭕❌ Tic-Tac-Toe – My Reverse Version</h3>
+        <span class="badge">Flutter Game · In Progress</span>
+        <p>
+          A twist on the classic Tic-Tac-Toe: the goal is to
+          <strong>avoid</strong> placing three marks in a line instead of trying
+          to create one. This flips the player’s usual strategy and makes the
+          game surprisingly tricky.
+        </p>
+        <p class="tech">
+          Tech: Flutter, Dart, custom game logic, responsive UI
+        </p>
+        <div class="project-links">
+          <a href="https://github.com/your-username/reverse-tic-tac-toe" target="_blank">GitHub</a>
+        </div>
+      </div>
+
+      <!-- Alarm + Weather -->
+      <div class="project-card">
+        <h3>⏰ Weather-Aware Alarm Clock</h3>
+        <span class="badge">IoT · Web/App UI</span>
+        <p>
+          An alarm clock concept that not only wakes you up but also shows
+          weather updates so users can plan their day (clothes, umbrella,
+          travel) as soon as they wake up.
+        </p>
+        <p class="tech">
+          Tech: APIs for weather data, UI design, basic automation logic
+        </p>
+        <div class="project-links">
+          <a href="#" target="_blank">GitHub</a>
+          <a href="#" target="_blank">Live</a>
+        </div>
+      </div>
+
+      <!-- Amma Cooker Off -->
+      <div class="project-card">
+        <h3>🍲 Amma_Cooker_Off – Whistle Tracker</h3>
+        <span class="badge">Python · Sound Detection · Web App</span>
+        <p>
+          A safety assistant that listens for pressure cooker whistles using a
+          microphone and identifies them using Python audio-processing
+          techniques. After the target number of whistles, it alerts the user
+          to switch off the stove.
+        </p>
+        <p>
+          A simple web interface lets users monitor status and interact with the
+          device. I’m exploring more features like notification options and
+          better sound classification.
+        </p>
+        <p class="tech">
+          Tech: Python (audio analysis), microphone input, web interface
+        </p>
+        <div class="project-links">
+          <a href="https://github.com/Anushreedevan/Useless-Projects.git" target="_blank">GitHub</a>
+        </div>
+      </div>
+
+      <!-- Line Following Robot -->
+      <div class="project-card">
+        <h3>🤖 Line Following Robot – AIROB</h3>
+        <span class="badge">Robotics · Hackathon</span>
+        <p>
+          A line-following robot built for the AIROB hackathon, tuned to follow
+          paths reliably and handle basic track variations. This project helped
+          me understand motor control, sensor calibration and fast debugging
+          under pressure.
+        </p>
+        <p class="tech">
+          Tech: Microcontrollers, line sensors, motor drivers, embedded logic
+        </p>
+        <p class="highlight">🏅 4th place at AIROB line-follower competition</p>
+        <a href="https://www.linkedin.com/posts/aparna-suresh-3b4400329_airob2025-robotics-arduino-activity-7371596084088926209-ZWcx?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFLRwjgBAtR68_rZMEpOG2rX0N1AniusWh8" target="_blank">
+          Watch Demo
+        </a>
+      </div>
+    </div>
+  </section>
+  <section id="Achievements" class="section reveal">
+  <h2>Achievements</h2>
+  <ul class="achievements">
+    <li>🥉 3rd Prize – Likely (Smart Water Leak Detection Hackathon)</li>
+    <li>🏅 4th Place – Line Following Robot (AIROB Hackathon)</li>
+    <li>🎨 Participant – STRIDE Designathon (Lavette Assistive Device)</li>
+  </ul>
+</section>
+
+
+  <section id="contact" class="section reveal">
+    <h2>Contact</h2>
+    <p>
+      Want to collaborate on a project, hackathon, or idea?
+      <br />
+      Reach me at:
+      <br />
+      <div class="contact-buttons">
+        <a href="mailto:aparna777suresh777@gmail.com">Email</a>
+        <a href="https://github.com/Aparna-ec" target="_blank">GitHub</a>
+        <a href="http://www.linkedin.com/in/aparna-suresh-3b4400329" target="_blank">LinkedIn</a>
+      </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 Aparna. Built with ❤️ and AI-assisted tools.</p>
+  </footer>
+ <script>
+   window.addEventListener("scroll", () => {
+   let sections = document.querySelectorAll("section");
+   let navLinks = document.querySelectorAll(".navbar nav a");
+
+   let current = "";
+
+   sections.forEach(section => {
+     let sectionTop = section.offsetTop;
+     if (pageYOffset >= sectionTop - 150) {
+       current = section.getAttribute("id");
+     }
+  });
+
+    navLinks.forEach(link => {
+      link.classList.remove("active");
+      if (link.getAttribute("href") === `#${current}`) {
+         link.classList.add("active");
+      }
+    });
+ });
+ </script>
+</body>
+</html>
